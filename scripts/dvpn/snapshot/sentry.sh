@@ -41,7 +41,7 @@
 
               SNAP_NAME=$(curl -s http://135.181.60.250:8083/sentinel/ | egrep -o ">sentinelhub-2.*tar" | tr -d ">"); \
               wget -O - http://135.181.60.250:8083/sentinel/${SNAP_NAME} | tar xf -
-           
+
             fi
 
             # sleep 30

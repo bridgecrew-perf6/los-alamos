@@ -57,7 +57,7 @@
               sed -i "/^pruning-interval = .*/ s//pruning-interval = \"10\"/" $APP_FILE
               sed -i "/^minimum-gas-prices = .*/ s//minimum-gas-prices = \"$MINIMUM_GAS_PRICE\"/" $APP_FILE
               sed -i "/^snapshot-interval = .*/ s//snapshot-interval = 0/" $APP_FILE
-           
+
             fi
 
             # sleep 30

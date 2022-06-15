@@ -6,7 +6,7 @@
 
                 # Mainnet
                 CHAIN_ID=axelar-dojo-1
-                
+
                 # Testnet
                 # CHAIN_ID=axelar-testnet-lisbon-3
 

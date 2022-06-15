@@ -1,5 +1,5 @@
             CHAIN_DIR=/home/heighliner/.gaia
-            
+
             if [ ! -d $CHAIN_DIR ]; then
               # Initialize config
               CHAIN_ID=cosmoshub-4

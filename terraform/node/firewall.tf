@@ -1,7 +1,7 @@
 resource "google_compute_firewall" "chain_node" {
   project = var.project_id
   name    = "${var.cluster_name}-firewall"
-  network = google_compute_network.vpc_network.id
+  network = google_compute_network.vpc_network.name
 
   allow {
     protocol = "icmp"
@@ -12,6 +12,6 @@ resource "google_compute_firewall" "chain_node" {
     ports    = ["22", "26656"]
   }
 
-  target_tags = ["${var.cluster_name}-node"]
-  source_ranges = [ "0.0.0.0/0" ]
+  target_tags   = ["${var.cluster_name}-node"]
+  source_ranges = ["0.0.0.0/0"]
 }
